@@ -2,8 +2,8 @@ package com.poo.classes;
 import java.time.LocalDate;
 
 public class Devolucao {
-    int devolucaoID;
-    LocalDate dataDevolucao;
+    private int devolucaoID;
+    private LocalDate dataDevolucao;
 
     public int getDevolucaoID() {
         return devolucaoID;
