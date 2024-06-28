@@ -12,7 +12,6 @@ public class Autor {
         return nome;
     }
 
-
     public void setAutorID(int autorID) {
         this.autorID = autorID;
     }
