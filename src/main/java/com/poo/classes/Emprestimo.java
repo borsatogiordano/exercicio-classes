@@ -3,8 +3,40 @@ package com.poo.classes;
 import java.time.LocalDate;
 
 public class Emprestimo {
-    int emprestimoID;
-    LocalDate dataEmprestimo;
-    LocalDate dataPrevisaoDevolucao;
-    Pessoa pessoa;
+    private int emprestimoID;
+    private LocalDate dataEmprestimo;
+    private LocalDate dataPrevisaoDevolucao;
+    private Pessoa pessoa;
+
+    public int getEmprestimoID() {
+        return emprestimoID;
+    }
+
+    public LocalDate getDataEmprestimo() {
+        return dataEmprestimo;
+    }
+
+    public LocalDate getDataPrevisaoDevolucao() {
+        return dataPrevisaoDevolucao;
+    }
+
+    public Pessoa getPessoa() {
+        return pessoa;
+    }
+
+    public void setEmprestimoID(int emprestimoID) {
+        this.emprestimoID = emprestimoID;
+    }
+
+    public void setDataEmprestimo(LocalDate dateEmprestimo) {
+        this.dataEmprestimo = dataEmprestimo;
+    }
+
+    public void setDataPrevisaoDevolucao(LocalDate dataPrevisaoDevolucao) {
+        this.dataPrevisaoDevolucao = dataEmprestimo.plusDays(7);
+    }
+
+    public void setPessoa(Pessoa pessoa) {
+        this.pessoa = pessoa;
+    }
 }
