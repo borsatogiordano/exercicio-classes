@@ -1,10 +1,10 @@
 package com.poo.classes;
 
 public class Livro {
-    int livroID;
-    String edicao;
-    String titulo;
-    int ano;
-    Editora editora;
-    Autor autor;
+    private int livroID;
+    private String edicao;
+    private String titulo;
+    private int ano;
+    private Editora editora;
+    private Autor autor;
 }

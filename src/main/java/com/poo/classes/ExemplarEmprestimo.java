@@ -1,8 +1,8 @@
 package com.poo.classes;
 
 public class ExemplarEmprestimo {
-        int ExemplarEmprestimoID;
-        Exemplar exemplar;
-        Emprestimo emprestimo;
-        Devolucao devolucao;
+        private int ExemplarEmprestimoID;
+        private Exemplar exemplar;
+        private Emprestimo emprestimo;
+        private Devolucao devolucao;
 }
