@@ -28,7 +28,7 @@ public class Emprestimo {
         this.emprestimoID = emprestimoID;
     }
 
-    public void setDataEmprestimo(LocalDate dateEmprestimo) {
+    public void setDataEmprestimo(LocalDate dataEmprestimo) {
         this.dataEmprestimo = dataEmprestimo;
     }
 
