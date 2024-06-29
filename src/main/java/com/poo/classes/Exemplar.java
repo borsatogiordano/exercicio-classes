@@ -1,8 +1,8 @@
 package com.poo.classes;
 
 public class Exemplar {
-    int exemplarID;
-    Livro livro;
+    private int exemplarID;
+    private Livro livro;
 
     public int getExemplarID() {
         return exemplarID;
