@@ -1,8 +1,15 @@
 package com.poo.classes;
 
 public class Editora {
+    private static int contadorEditora = 0;
     private int editoraID;
     private String nome;
+
+    Editora(String nome){
+        this.nome = nome;
+        contadorEditora = editoraID;
+        contadorEditora++;
+    }
 
     public int getEditoraID() {
         return editoraID;
