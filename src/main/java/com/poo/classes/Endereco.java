@@ -13,7 +13,7 @@ public class Endereco {
 
     public Endereco(int cep) {
         this.cep = cep;
-        contadorEndereco = enderecoID;
+        enderecoID = contadorEndereco;
         contadorEndereco++;
     }
 

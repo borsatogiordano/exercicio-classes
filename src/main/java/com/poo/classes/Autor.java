@@ -7,7 +7,7 @@ public class Autor {
 
     public Autor(String nome, int autorID) {
         this.nome = nome;
-        contadorAutor = autorID;
+        autorID = contadorAutor;
         contadorAutor++;
     }
 

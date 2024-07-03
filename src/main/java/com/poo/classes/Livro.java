@@ -10,7 +10,7 @@ public class Livro {
     private Autor autor;
 
     public Livro(String edicao, String titulo, int ano, Editora editora, Autor autor) {
-        contadorLivro = livroID;
+        livroID = contadorLivro;
         contadorLivro++;
         this.edicao = edicao;
         this.titulo = titulo;

@@ -7,7 +7,7 @@ public class Editora {
 
     public Editora(String nome){
         this.nome = nome;
-        contadorEditora = editoraID;
+        editoraID = contadorEditora;
         contadorEditora++;
     }
 

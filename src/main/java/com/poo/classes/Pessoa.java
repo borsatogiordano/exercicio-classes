@@ -12,7 +12,7 @@ public class Pessoa {
         this.nome = nome;
         this.cpf = cpf;
         this.endereco = endereco;
-        contadorPessoa = pessoaID;
+        pessoaID = contadorPessoa ;
         contadorPessoa++;
     }
 
