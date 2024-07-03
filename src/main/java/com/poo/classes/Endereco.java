@@ -8,6 +8,7 @@ public class Endereco {
     private String tipo;
     private int numeroResidencia;
     private String complemento;
+    private int cep;
 
     public Pessoa getPessoa() {
         return pessoa;
@@ -35,6 +36,10 @@ public class Endereco {
 
     public String getComplemento() {
         return complemento;
+    }
+
+    public int getCep() {
+        return cep;
     }
 
     public void setPessoa(Pessoa pessoa) {
@@ -67,5 +72,9 @@ public class Endereco {
 
     public void setComplemento(String complemento) {
         this.complemento = complemento;
+    }
+
+    public void setCep(int cep) {
+        this.cep = cep;
     }
 }
