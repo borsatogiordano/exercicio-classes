@@ -11,7 +11,7 @@ public class Endereco {
     private String complemento;
     private int cep;
 
-    Endereco(int cep) {
+    public Endereco(int cep) {
         this.cep = cep;
         contadorEndereco = enderecoID;
         contadorEndereco++;

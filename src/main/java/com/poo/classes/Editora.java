@@ -5,7 +5,7 @@ public class Editora {
     private int editoraID;
     private String nome;
 
-    Editora(String nome){
+    public Editora(String nome){
         this.nome = nome;
         contadorEditora = editoraID;
         contadorEditora++;

@@ -9,7 +9,7 @@ public class Livro {
     private Editora editora;
     private Autor autor;
 
-    Livro(String edicao, String titulo, int ano, Editora editora, Autor autor) {
+    public Livro(String edicao, String titulo, int ano, Editora editora, Autor autor) {
         contadorLivro = livroID;
         contadorLivro++;
         this.edicao = edicao;
