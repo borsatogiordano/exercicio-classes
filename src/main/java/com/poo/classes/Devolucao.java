@@ -1,15 +1,22 @@
 package com.poo.classes;
+
 import java.time.LocalDate;
 
 public class Devolucao {
+    private static int contadorDevolucao=0;
     private int devolucaoID;
     private LocalDate dataDevolucao;
+
+    public Devolucao() {
+        devolucaoID = contadorDevolucao;
+        contadorDevolucao++;
+    }
 
     public int getDevolucaoID() {
         return devolucaoID;
     }
 
-    public LocalDate getDataDevolucao(){
+    public LocalDate getDataDevolucao() {
         return this.dataDevolucao;
     }
 

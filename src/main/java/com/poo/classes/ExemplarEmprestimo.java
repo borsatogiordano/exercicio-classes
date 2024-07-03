@@ -1,10 +1,16 @@
 package com.poo.classes;
 
 public class ExemplarEmprestimo {
+        private static int contadorExemplarEmprestimo = 0;
         private int exemplarEmprestimoID;
         private Exemplar exemplar;
         private Emprestimo emprestimo;
         private Devolucao devolucao;
+
+        ExemplarEmprestimo() {
+                exemplarEmprestimoID = contadorExemplarEmprestimo;
+                contadorExemplarEmprestimo++;
+        }
 
         public int getExemplarEmprestimoID() {
                 return exemplarEmprestimoID;

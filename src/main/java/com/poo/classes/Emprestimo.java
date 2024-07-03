@@ -3,10 +3,16 @@ package com.poo.classes;
 import java.time.LocalDate;
 
 public class Emprestimo {
+    private static int contadorEmprestimo;
     private int emprestimoID;
     private LocalDate dataEmprestimo;
     private LocalDate dataPrevisaoDevolucao;
     private Pessoa pessoa;
+
+    public Emprestimo() {
+        emprestimoID = contadorEmprestimo;
+        contadorEmprestimo++;
+    }
 
     public int getEmprestimoID() {
         return emprestimoID;
