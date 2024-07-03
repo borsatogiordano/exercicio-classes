@@ -1,6 +1,7 @@
 package com.poo.classes;
 
 public class Livro {
+    private static int contadorLivro = 0;
     private int livroID;
     private String edicao;
     private String titulo;
@@ -8,9 +9,20 @@ public class Livro {
     private Editora editora;
     private Autor autor;
 
+    Livro(String edicao, String titulo, int ano, Editora editora, Autor autor) {
+        contadorLivro = livroID;
+        contadorLivro++;
+        this.edicao = edicao;
+        this.titulo = titulo;
+        this.ano = ano;
+        this.editora = editora;
+        this.autor = autor;
+    }
+
     public int getLivroID() {
         return livroID;
     }
+
     public String getEdicao() {
         return edicao;
     }
