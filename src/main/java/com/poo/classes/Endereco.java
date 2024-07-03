@@ -1,6 +1,7 @@
 package com.poo.classes;
 
 public class Endereco {
+    private static int contadorEndereco = 0;
     private Pessoa pessoa;
     private int enderecoID;
     private String uf;
@@ -9,6 +10,12 @@ public class Endereco {
     private int numeroResidencia;
     private String complemento;
     private int cep;
+
+    Endereco(int cep) {
+        this.cep = cep;
+        contadorEndereco = enderecoID;
+        contadorEndereco++;
+    }
 
     public Pessoa getPessoa() {
         return pessoa;
