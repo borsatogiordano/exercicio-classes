@@ -5,10 +5,8 @@ abstract class Funcionario extends Pessoa {
     private String login;
     private String senha;
 
-    public Funcionario(String nome, String cpf, Endereco endereco) {
+    public Funcionario(String nome, String cpf, Endereco endereco, String login, String senha) {
         super(nome, cpf, endereco);
-        this.login = login;
-        this.senha = senha;
     }
 
     public String getLogin() {
@@ -26,6 +24,8 @@ abstract class Funcionario extends Pessoa {
     public void setSenha(String senha) {
         this.senha = senha;
     }
-}
-    
 
+    public boolean autentica(String login, String senha) {
+        return this.login.equals(login) && this.senha.equals(senha);
+    }
+}
