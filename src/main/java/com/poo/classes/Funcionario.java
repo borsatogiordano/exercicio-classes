@@ -27,15 +27,29 @@ abstract class Funcionario extends Pessoa {
         this.senha = senha;
     }
 
-    public double getSalario(){
+    public double getSalario() {
         return this.salario;
     }
 
-    public void setSalario(double salario){
+    public void setSalario(double salario) {
         this.salario = salario;
     }
 
     public boolean autentica(String login, String senha) {
         return this.login.equals(login) && this.senha.equals(senha);
     }
+
+    private double calcularINSS() {
+        return salario * 0.1;
+    }
+
+    private double calcularFGTS() {
+        return salario * 0.08;
+    }
+
+    private double calcularSalarioLiquido() {
+        return salario - calcularINSS() - calcularFGTS() + calcularBonificacao();
+    }
+
+    public abstract double calcularBonificacao();
 }
