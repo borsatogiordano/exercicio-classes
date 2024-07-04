@@ -1,0 +1,8 @@
+package com.poo.classes;
+
+public class Gerente extends Funcionario {
+    
+    public Gerente(String nome, Endereco endereco, String login, String senha){
+        super(nome,endereco,login,senha);
+    }
+}
