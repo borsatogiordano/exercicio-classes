@@ -1,6 +1,6 @@
 package com.poo.classes;
 
-public class Pessoa {
+abstract class Pessoa {
     private static int contadorPessoa = 0;
     private int pessoaID;
     private int rg;
