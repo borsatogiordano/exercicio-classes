@@ -56,12 +56,12 @@ abstract class Funcionario extends Pessoa {
     public void imprimeContraCheque() {
         System.out.println("==== Contra-cheque ====");
         System.out.println("Cargo: " + this.getClass().getSimpleName());
-        System.out.println("Nome: " + getNome());
-        System.out.println("CPF: " + getCpf());
-        System.out.println("Salario Base: R$ " + getSalario());
-        System.out.println("INSS (10%): R$ " + calcularINSS());
-        System.out.println("FGTS (8%^): R$ " + calcularFGTS());
-        System.out.println("Bonificação: R$ " + calcularBonificacao());
-        System.out.println("Salário Líquido R$ " + calcularSalarioLiquido());
+        System.out.println("Nome: " + this.getNome());
+        System.out.println("CPF: " + this.getCpf());
+        System.out.println("Salario Base: R$ " + this.getSalario());
+        System.out.println("INSS (10%): R$ " + this.calcularINSS());
+        System.out.println("FGTS (8%^): R$ " + this.calcularFGTS());
+        System.out.println("Bonificação: R$ " + this.calcularBonificacao());
+        System.out.println("Salário Líquido R$ " + this.calcularSalarioLiquido());
     }
 }
